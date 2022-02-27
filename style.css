@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: sans-serif;
+    background: #d9e2ec;
+    
+}
+h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: #f0f4f8;
+}
+h3{
+    font-size: 2rem;
+    line-height: 2;
+    margin-bottom: 1rem;    /*دقيقه15:13*/
+    color: #d5d5d5;
+    
+    
+}
+p{
+    font-size: 1.6rem;
+    color: #345375;
+    line-height: 2;
+}
+/*NAV SECTION*/
+.nav-continar{
+    background: #334e68;                        /*   background: red; /*<=   erase*/                   
+    color: #f0f4f8;
+    
+}
+nav{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+                               /* background: lightblue;  /*  Erase*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 1.6rem
+}
+
+ /*nav .logo*/
+.logo{        /*19:10   minuts*/
+    font-family: cursive;
+    font-weight: bold;
+    color: #f0f4f8;
+    font-size: 4rem;
+    flex: 2;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex: 1;
+    
+}
+
+nav ul li a{
+    color: #f0f4f8;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: orange;
+}
+                                     /*hero section*/
+.hero{
+    height: 90vh;
+    position: relative;
+    
+}
+.hero::after{         /*25:22  minuts*/
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: heroBg 5s ease-in;     /* minuts 51:54*/
+    background-image: linear-gradient(
+        90deg,
+        rgba(51,78,104,0.2) 0% ,
+        rgba(20,63,92,0.8) 20%
+    ),
+        url(images/1920-1087.jpg);
+   /*     background-repeat: no-repeat;   /*  Erase*/    
+   /* width: 70px;*/    /*  Erase*/
+}
+
+
+    .content{      /*25:22  minuts*/
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; 
+        height: 90vh;/**/
+       /* background: red;  /*  Erase*/   
+                
+
+    }   
+.btn{
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: .75rem 3rem;
+    font-weight: bold;
+    border-radius: .5rem;     /*border-radius: 100%;*/
+    border: none;
+    outline: none;
+    
+ }
+.btn a{
+   color:#243b53;   
+     font-size: 1.6rem;
+    text-decoration: none;
+}
+.btn:hover{
+   background: #2fca9c;
+    scale: 1.1;      /*تمام*/
+}
+.btn:active{
+  /** scale: 1.1;*/          /*مش تمام*/
+  /* transform: scale(0.98); */ /*مش تمام*/
+}
+
+.qualities{
+    width: 90%;
+   margin: 4rem auto;    /*margin top and bootm only*/            /*margin: 0 auto;*/
+    max-width: 1366px;
+    height: 100%;    /* not understand*/
+    min-height: 50vh;    /* not understand*/     /*30:00 minuts*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  
+    /*   background: lightblue;  /*  Erase*/    
+}
+.qualities h2{       /*35:29 minuts*/
+    font-size: 3rem;
+    
+}
+.quality-container{
+     display: flex;
+    justify-content: space-between;
+    grid-gap: 2rem;
+    padding-top: 5rem;
+    
+   /* background: red;*/
+}
+
+.quality{
+    background: #bcccdc;
+    padding: 4rem 0;
+    width: 30%;
+}
+.quality p{   /*34:16 minuts*/
+    
+    text-align: center;
+    width: 90%;
+    margin: 1rem auto;
+}
+.quality h3{    /**/
+    color: black;
+    font-size: 2.2rem;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*minuts  43:48*/   /*Contact*/
+.contact{
+    width: 90%;
+    max-width: 1366px;
+    margin: 3rem auto;  /*من فوق ومن تحت فقط*/
+    height: 100%;
+    padding: 2rem 0;  /*من فوق ومن تحت 3ريم   وصفر من اليمين والشمال*/
+    text-align: center;
+   /* background-color: black;   /*Erase*/      
+      
+    
+}
+/*minuts  45*/   /*Contact*/
+lable,
+input,
+textarea{
+    font-family: inherit;
+    font-size: 1.6rem;
+    
+}
+form{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+form .btn{
+    width: 100px;
+    text-align: center;    /*Erase*/
+    align-self: center;
+}
+
+/*51 minuts*/
+/*
+@keyframes heroBg{
+    from{
+        scale:1.2;
+    }
+    to{
+       scale:1; 
+    }
+}
+*/
+
+@keyframes heroBg{
+    from{
+        transform: scale(1.2);
+    }
+    to{
+       transform: scale(1);
+    }
+}
+
+
+
+
+
+
